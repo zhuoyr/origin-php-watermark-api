@@ -25,4 +25,5 @@ if ($url == '') {
 $watermarkObj = new WatermarkController();
 $result       = $watermarkObj->parseVideo($url);
 
+header('content-type:application/json');
 echo json_encode($result);
